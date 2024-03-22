@@ -17,8 +17,34 @@ html {
 }
 
 #header {
-    height: 45px;
+    height: 46px;
     background-color: black;
+    position: fixed;
+    width: 100%;
+    /* line-height: 46px; */
+    /* display: ; */
+    top: 0;
+    right: 0;
+    left: 0;
+}
+#header .search_btn {
+
+    float: right;
+    padding: 0 21px;
+}
+#header .search_btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+
+}
+#nav {
+    display: inline-block;
 }
 
 #nav, .subnav {
@@ -61,6 +87,8 @@ html {
     background-color: #fff;
     box-shadow:  0 0 10px rgb(0,0,0,0.3) ;
     min-width: 160px;
+    top: 100%;
+    left: 0;
 
 }
 
@@ -74,14 +102,19 @@ html {
 #nav li:hover .subnav {
     display: block;
 }
+#nav .nav-arrow-down {
+    font-size: 12px;
+
+}
 
 
 #slider {
     min-height: 500px;
-    
-
+    background-color: #ccc;
+    margin-top: 46px;
+}
 #content {
-
+ height: 1000px;
 }
 
 #footer {
